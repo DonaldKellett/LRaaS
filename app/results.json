@@ -1,0 +1,17 @@
+{
+  "debian": 0,
+  "ubuntu": 0,
+  "mint": 0,
+  "fedora": 0,
+  "rhel": 0,
+  "centos": 0,
+  "sles": 0,
+  "opensuse": 0,
+  "arch": 0,
+  "gentoo": 0,
+  "slackware": 0,
+  "nixos": 0,
+  "alpine": 0,
+  "other": 0,
+  "none": 0
+}
