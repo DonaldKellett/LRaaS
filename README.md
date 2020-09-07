@@ -1,6 +1,6 @@
 # LRaaS
 
-"Linux Rocks" as a (systemd) Service
+[Linux Rocks](https://github.com/DonaldKellett/Linux-Rocks) as a (systemd) Service
 
 ## License
 
