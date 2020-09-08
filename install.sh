@@ -12,3 +12,5 @@ sudo systemctl start mariadb
 echo 'In the line that follows, enter the root password for your MariaDB server, NOT your system root password'
 mysql -u root -p < setup.sql
 sudo systemctl stop mariadb
+sudo cp ./linux-rocks.service /usr/lib/systemd/system
+sudo systemctl daemon-reload

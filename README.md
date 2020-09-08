@@ -34,11 +34,39 @@ You will be prompted for your `sudo` and MariaDB root passwords when necessary.
 
 ## Starting the service
 
-TODO
+Just run:
+
+```bash
+$ sudo systemctl start linux-rocks
+```
+
+and point your web browser to the IP address of your Linux host running the service to enjoy the app.
+
+If the app appears to load indefinitely or fails to load altogether, this may be due to firewall settings on the Linux host running the web service and you may have to tweak your firewall settings accordingly. A simple (though insecure!) way to resolve this is to disable the firewall on your Linux host running the service, e.g.
+
+```bash
+$ sudo systemctl stop firewalld
+```
+
+You may have to adapt the command above depending on which firewall is used.
+
+If you are doing this on an isolated Linux virtual machine separate from your base system as suggested then this should not pose significant security risks to your base system.
 
 ## Stopping the service
 
-TODO
+Just run
+
+```bash
+$ sudo systemctl stop linux-rocks
+```
+
+You will also probably want to stop the MariaDB server that was automatically started when `linux-rocks` was started:
+
+```bash
+$ sudo systemctl stop mariadb
+```
+
+Note that the state of the database persists between runs of the service, so next time you (re)start the Linux Rocks voting app, existing results from previous votes should be there.
 
 ## Uninstallation
 
@@ -49,6 +77,8 @@ $ ./uninstall.sh
 ```
 
 You will be prompted for your `sudo` and MariaDB root passwords when necessary.
+
+Note that uninstallation also removes any data associated with the Linux Rocks voting app so all the voting data since your last install of Linux Rocks will be lost.
 
 ## License
 

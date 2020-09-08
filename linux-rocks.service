@@ -1,0 +1,9 @@
+[Unit]
+Description=Proof of concept voting app. Vote for your favorite Linux distribution!
+BindsTo=mariadb.service
+
+[Service]
+ExecStart=/bin/node /opt/Linux-Rocks/server.js
+
+[Install]
+WantedBy=multi-user.target
