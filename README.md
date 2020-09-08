@@ -12,6 +12,8 @@ A Linux host with [systemd](https://systemd.io) as its init system:
 
 _It is highly recommended that this service be installed and run on an isolated Linux virtual machine separate from your base system, even if you are running Linux natively._ I will **not** be responsible for any potential damage done to your base (Linux) system by (un)installing the service via the scripts provided in this repo. You've been warned ;-)
 
+## Pre-installation
+
 Before proceeding with the installation procedure, make sure that the following dependencies are installed:
 
 - Node.js
@@ -28,9 +30,13 @@ Simply `cd` to the root of this repo and run the install script:
 $ ./install.sh
 ```
 
-You will be prompted for your `sudo` password when necessary.
+You will be prompted for your `sudo` and MariaDB root passwords when necessary.
 
 ## Starting the service
+
+TODO
+
+## Stopping the service
 
 TODO
 
@@ -42,7 +48,7 @@ Simply `cd` to the root of this repo and run the uninstall script;
 $ ./uninstall.sh
 ```
 
-You will be prompted for your `sudo` password when necessary.
+You will be prompted for your `sudo` and MariaDB root passwords when necessary.
 
 ## License
 
